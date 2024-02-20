@@ -7,10 +7,14 @@ import Resume from './containers/Resume/Index';
 import Skills from './containers/Skills/Index';
 import Portfolio from './containers/Portfolio/Index';
 import Contact from './containers/Contact/Index';
+import Navbar from './components/navBar/Index';
 
 function App() {
   return (
     <div className="App">
+
+
+      <Navbar/>
 
 
 
