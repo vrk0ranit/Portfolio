@@ -1,6 +1,6 @@
 
 import './App.css';
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, useLocation } from 'react-router-dom'
 import Home from './containers/Home/Index';
 import About from './containers/About/Index';
 import Resume from './containers/Resume/Index';
@@ -8,12 +8,21 @@ import Skills from './containers/Skills/Index';
 import Portfolio from './containers/Portfolio/Index';
 import Contact from './containers/Contact/Index';
 import Navbar from './components/navBar/Index';
+import Part from './utils/particles';
+
 
 function App() {
+  const location = useLocation();
+  console.log(location);
+
+  const renderParticleJsInHomePage = location.pathname === "/";
   return (
     <div className="App">
-
-
+      {
+         renderParticleJsInHomePage || (<Part/>)
+      }
+      
+      <Part/>
       <Navbar/>
 
 
