@@ -19,10 +19,10 @@ function App() {
   return (
     <div className="App">
       {
-        //  renderParticleJsInHomePage || (<Part/>)
+          renderParticleJsInHomePage && (<Part/>)
       }
       
-      {/* <Part/> */}
+      
       <Navbar/>
 
 
