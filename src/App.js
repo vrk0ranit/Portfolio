@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import {Routes, Route, useLocation } from 'react-router-dom'
 import Home from './containers/Home/Index';
 import About from './containers/About/Index';
@@ -19,14 +19,14 @@ function App() {
   return (
     <div className="App">
       {
-         renderParticleJsInHomePage || (<Part/>)
+        //  renderParticleJsInHomePage || (<Part/>)
       }
       
-      <Part/>
+      {/* <Part/> */}
       <Navbar/>
 
 
-
+      <div className='App__main-page-content'>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
@@ -35,6 +35,8 @@ function App() {
         <Route path='/portfolio' element={<Portfolio/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
+      </div>
+      
      
     </div>
   );
