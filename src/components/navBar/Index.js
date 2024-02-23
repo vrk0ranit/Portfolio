@@ -21,7 +21,7 @@ const data = [
         to : '/resume'
     },   
     {
-        label: 'PORTFOLIO',
+        label: 'POROJECT',
         to : '/portfolio'
     },   
     {
