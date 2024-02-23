@@ -135,4 +135,31 @@
             grid-template-columns: repeat(1,1fr);
         }
     }
+    .popup{
+        position: absolute;
+        align-content: center;
+        justify-content: center;
+        margin-top: 79px;
+        top: 0;
+        height: 90px;
+        width: 320px;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ed0b0b;
+        border-bottom: 4px solid greenyellow;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        text-align: center;
+        p{
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+          }
+    }
 }

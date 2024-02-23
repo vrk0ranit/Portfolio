@@ -21,7 +21,7 @@
             position: relative;
             overflow: hidden;
             white-space: nowrap;
-            animation: typingEffectAnimation 2.5s steps(30, end);
+            animation: typingEffectAnimation 3s steps(20, end);
         }
     }
     &__contact-me{
@@ -80,8 +80,8 @@
 }
 @media only screen and (max-width: 769px) and (max-width: 990px) {
     .home__text-wrapper h1{
-        font-size: 3rem;
-        line-height: 5rem;
+        font-size: 2rem;
+        line-height: 4rem;
     }
 }
 

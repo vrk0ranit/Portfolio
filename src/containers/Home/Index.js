@@ -47,7 +47,7 @@ const Home =() => {
             <a href='https://twitter.com/Bag11Ranit' target='_blank' rel=''>
               <FaXTwitter size={40} />
             </a>
-            <a href='https://twitter.com/Bag11Ranit' target='_blank' rel=''>
+            <a href='https://www.instagram.com/rony.7943/' target='_blank' rel=''>
               <FaInstagram size={40} />
             </a>
           </div>

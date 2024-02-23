@@ -12,7 +12,7 @@ import { useState } from "react";
 const portfolioData = [
   {
     id: 3,
-    name: "Text To Speech Converter",
+    name: "TextToSpeechConverter",
     image: ImageOne,
     link: "https://text-to-speech-converter-sepia-five.vercel.app/ ",
   },
@@ -24,7 +24,7 @@ const portfolioData = [
   },
   {
     id: 2,
-    name: "Light and Dark Mode",
+    name: "Light & Dark",
     image: ImageThree,
     link: "https://light-and-dark-mode-sigma.vercel.app/",
   },

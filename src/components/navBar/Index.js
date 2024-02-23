@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaReact} from 'react-icons/fa'
-import { Link, } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {HiX} from 'react-icons/hi'
 import './styles.scss'
 const data = [
@@ -21,7 +21,7 @@ const data = [
         to : '/resume'
     },   
     {
-        label: 'POROJECT',
+        label: 'PROJECTS',
         to : '/portfolio'
     },   
     {
