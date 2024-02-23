@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaReact} from 'react-icons/fa'
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import {HiX} from 'react-icons/hi'
 import './styles.scss'
 const data = [
@@ -52,9 +52,7 @@ const Navbar = () => {
                              {item.label}
                             </Link>
                         </li>
-
-                    ))
-                }
+                    ))}
             </ul>
             <div className="nav-icon" onClick={handleToggleIcon}>
               {
