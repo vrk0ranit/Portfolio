@@ -87,3 +87,37 @@
         padding-right: 20px;
     }
 }
+@media only screen and (max-width: 768px) {
+    /* Make menu items display vertically and hide by default */
+    .navbar__container__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+        &.active {
+            background: #181818;
+            left: 0px;
+            opacity: 1;
+        }
+
+        &__item {
+            border-bottom: 1px solid #282828;
+            left: 0px;
+            padding: 20px 0px;
+        }
+    }
+
+    /* Show the icon and style it */
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        color: var(--yellow-theme-main-color);
+        padding-right: 20px;
+    }
+}

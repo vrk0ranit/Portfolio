@@ -13,7 +13,7 @@ import Part from './utils/particles';
 
 function App() {
   const location = useLocation();
-  console.log(location);
+  
 
   const renderParticleJsInHomePage = location.pathname === "/";
   return (
