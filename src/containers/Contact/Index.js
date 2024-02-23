@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import PageHeaderContent from '../../components/pageHeaderContent/Index';
 import { Animate } from 'react-simple-animate';
@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
+  const [showPopup, setShowPopup] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,6 +19,8 @@ const Contact = () => {
       .then(
         (response) => {
           console.log('Email sent successfully:', response);
+          // Show the popup after successful form submission
+          setShowPopup(true);
         },
         (error) => {
           console.error('Email failed to send:', error);
@@ -26,6 +29,11 @@ const Contact = () => {
 
     // Clear the form
     e.target.reset();
+  };
+
+  const closePopup = () => {
+    // Close the popup
+    setShowPopup(false);
   };
 
   return (
@@ -102,9 +110,16 @@ const Contact = () => {
             </form>
           </div>
         </Animate>
+        {showPopup && (
+          <div className="popup">
+            <p>Form submitted successfully!</p>
+            <button onClick={closePopup}>Close</button>
+          </div>
+        )}
       </div>
     </section>
   );
 };
 
 export default Contact;
+

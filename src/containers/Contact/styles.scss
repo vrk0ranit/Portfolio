@@ -96,6 +96,36 @@
         }
     }
 }
+.popup {
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    top: 0;
+    height: 200px;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-bottom: 4px solid greenyellow;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    text-align: center;
+  
+    p {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  
+  
 
 @media only screen and (max-width: 768px){
     .contact__content__form{
