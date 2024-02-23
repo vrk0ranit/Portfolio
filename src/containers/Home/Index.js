@@ -2,6 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'
 import './styles.scss';
 import {Animate} from 'react-simple-animate'
+import { FaLinkedin, FaGithub, FaInstagram  } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Home =() => {
   const navigate = useNavigate();
@@ -34,6 +37,20 @@ const Home =() => {
         <div className='home__contact-me'>
           <button onClick={handleNavigateToContactMePage}>Hire Me</button>
         </div>
+        <div className='home__social-icons'>
+            <a href='https://www.linkedin.com/in/ranit-bag-78b3ba252/' target='_blank' rel=''>
+              <FaLinkedin size={40}/>
+            </a>
+            <a href='https://github.com/vrk0ranit' target='_blank' rel=''>
+              <FaGithub size={40} />
+            </a>
+            <a href='https://twitter.com/Bag11Ranit' target='_blank' rel=''>
+              <FaXTwitter size={40} />
+            </a>
+            <a href='https://twitter.com/Bag11Ranit' target='_blank' rel=''>
+              <FaInstagram size={40} />
+            </a>
+          </div>
       </Animate>
     </section>
   )

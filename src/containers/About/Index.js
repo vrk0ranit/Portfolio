@@ -4,6 +4,7 @@ import  PageHeaderContent from '../../components/pageHeaderContent/Index'
 import { Animate } from 'react-simple-animate'
 import './styles.scss';
 import {FaDev , FaDatabase, FaNodeJs, FaNode} from 'react-icons/fa'
+import Iframe from 'react-iframe'
 
 const personalDetails = [
   {
@@ -16,15 +17,16 @@ const personalDetails = [
   },
   {
     label: "Address",
-    value: "India",
-  },
-  {
-    label: "Email",
-    value: "ranitbag49@gmail.com",
+    value: "Mednipur,West Bengal,India",
   },
 ];
 
-const jobSummary = 'Seasoned and independent Full Stack Developer with 1 year experience'
+const jobSummary = "Hey, I'm Ranit Bag, a second-year BCA student on a mission to make cool websites! Currently studying at Midnapore College(Autonomous), I'm learning MERN Stack web development since last 6 months along with my college study.I use HTML, CSS, and JavaScript and React to make websites look awesome and work smoothly.I'm not just a front-end guy; I'm also diving into the backend world with Node.js and Express.js ,MongoDb. It's like the engine behind the scenes that makes everything run.I'm also getting my hands dirty with Next.js to make websites load super fast.I'm not just about coding; I'm about solving problems. I love turning ideas into real.When I'm not coding, I'm exploring the latest tech trends, sharpening my skills, and hanging out in the developer community. Let's chat and maybe build something awesome together"
+
+const googleMapEmbedUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyAGNRSoxSf6IOdYw4FpSr4Ey6bPJk81htw&q=22.425721,87.327698`;
+
+
+
 
 const About = () => {
   return (
@@ -99,9 +101,25 @@ const About = () => {
          <div><FaNode size={60} color='var(--yellow-theme-main-color)'/></div>
       </div>
        </Animate>
+       
      </div>
-     
-       </div>
+        
+          
+   </div>
+    
+   <Iframe
+            url={googleMapEmbedUrl}
+            width='20%'
+            height='20%' // Set an appropriate height for the map
+            id='mapIframe'
+            className='mapIframeClassname'
+            display='initial'
+            position='absolute'
+            frameBorder='0'
+            allowFullScreen
+          /> 
+         
+         
     </section>
   )
 }
