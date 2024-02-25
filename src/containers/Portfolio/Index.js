@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent/Index";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { GoProjectSymlink } from "react-icons/go";
 import ImageOne from "../../images/image1.png";
 import ImageTwo from "../../images/image2.png";
 import ImageThree from "../../images/image3.png";
@@ -12,7 +12,7 @@ import { useState } from "react";
 const portfolioData = [
   {
     id: 3,
-    name: "TextToSpeechConverter",
+    name: "Text To Sound",
     image: ImageOne,
     link: "https://text-to-speech-converter-sepia-five.vercel.app/ ",
   },
@@ -30,7 +30,7 @@ const portfolioData = [
   },
   {
     id: 3,
-    name: "Currency Converter",
+    name: "Currency Changer",
     image: ImageFour,
     link: "https://currency-converter-d44z.vercel.app/",
   },
@@ -84,7 +84,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<GoProjectSymlink size={40} />}
       />
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">

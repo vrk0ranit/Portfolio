@@ -56,11 +56,11 @@
     a {
         margin: 0 10px;
         font-size: 2rem;
-        color: #d31212; 
+        color: var(--yellow-theme-main-color); 
 
     &:hover{
-        color: #000000;
-        background: var(--yellow-theme-main-color);
+        color: --yellow-theme-nav-background-color;
+        background: var( --yellow-theme-sub-text-color);
     }
 }
 } 

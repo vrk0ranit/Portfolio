@@ -17,7 +17,7 @@ const personalDetails = [
   },
   {
     label: "Address",
-    value: "Mednipur,West Bengal,India",
+    value: "Howrah",
   },
 ];
 

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { BsInfoCircleFill } from 'react-icons/bs';
+import { TiContacts } from "react-icons/ti";
 import PageHeaderContent from '../../components/pageHeaderContent/Index';
 import { Animate } from 'react-simple-animate';
 import './styles.scss';
@@ -40,7 +40,7 @@ const Contact = () => {
     <section id='contact' className='contact'>
       <PageHeaderContent
         headerText='Contact'
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<TiContacts size={40} />}
       />
       <div className='contact__content'>
         <Animate
