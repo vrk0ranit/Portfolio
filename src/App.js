@@ -1,15 +1,15 @@
-
+import React,{lazy} from 'react';
 import './App.scss';
 import {Routes, Route, useLocation } from 'react-router-dom'
-import Home from './containers/Home/Index';
-import About from './containers/About/Index';
-import Resume from './containers/Resume/Index';
-import Skills from './containers/Skills/Index';
-import Portfolio from './containers/Portfolio/Index';
-import Contact from './containers/Contact/Index';
 import Navbar from './components/navBar/Index';
 import Part from './utils/particles';
 
+const Home = lazy(() => import('./containers/Home/Index'));
+const About = lazy(() => import('./containers/About/Index'));
+const Resume = lazy(() => import('./containers/Resume/Index'));
+const Skills = lazy(() => import('./containers/Skills/Index'));
+const Portfolio = lazy(() => import('./containers/Portfolio/Index'));
+const Contact = lazy(() => import('./containers/Contact/Index'));
 
 function App() {
   const location = useLocation();
