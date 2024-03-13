@@ -4,7 +4,7 @@ import {Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/navBar/Index';
 import Part from './utils/particles';
 
-const Home = lazy(() => import('./containers/Home/Index'));
+import Home from './containers/Home/Index';
 import About  from './containers/About/Index';
 import Resume from './containers/Resume/Index';
 import Skills from './containers/Skills/Index';
