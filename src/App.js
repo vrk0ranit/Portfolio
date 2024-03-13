@@ -1,9 +1,8 @@
-import React,{lazy} from 'react';
+import React from 'react';
 import './App.scss';
 import {Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/navBar/Index';
 import Part from './utils/particles';
-
 import Home from './containers/Home/Index';
 import About  from './containers/About/Index';
 import Resume from './containers/Resume/Index';
